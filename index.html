@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title>login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;800;900&family=PT+Sans+Caption&family=Pacifico&family=Poppins:wght@400;600&family=Righteous&family=Roboto:ital@1&family=Titillium+Web&display=swap"
+        rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- <.......................... Start Welcome page .........................................> -->
+
+    <section id="welcomePage">
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body boxShadow" data-bs-theme="dark"
+            id="navBar">
+            <div class="container">
+                <a class="navbar-brand" href="#">SMART LOGIN</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a id="logOutBtn" class="nav-link btn border border-warning btn-outline-warning" href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container my-5 text-center h-75 d-flex align-items-center" id="welcome">
+            <div class="boxShadow m-auto w-75 p-5">
+                <h1 id="userName">Welcome </h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- <.......................... Start Welcome page .........................................> -->
+
+
+
+    <!-- <............................... Start Signin page ............................................> -->
+    <div class="container my-5 text-center" id="signInPage">
+        <div class="boxShadow m-auto w-75 p-5">
+            <form action="#">
+                <h1>Smart Login System</h1>
+                <input id="signInEmail" class="form-control my-3" placeholder="Enter your email" type="text">
+                <input id="signInPassword" class="form-control my-3" placeholder="Enter your password" type="password">
+
+                <button id="logInBtn" class="btn btn-outline-info w-100 my-3">Login</button>
+                <p class="text-white">Don’t have an account? <a class="text-white" id="signUpLink" href="#">Sign
+                        Up</a></p>
+            </form>
+        </div>
+    </div>
+    <!-- <............................... End Signin page ............................................> -->
+
+
+
+    <!-- <............................... Start Signup page ............................................> -->
+    <div class="container my-5 text-center" id="signUpPage">
+        <div class="boxShadow m-auto w-75 p-5">
+            <form action="#">
+                <h1>Smart Login System</h1>
+                <input id="signUpName" class="form-control my-3" placeholder="Enter your name" type="text">
+                <input id="signUpEmail" class="form-control my-3" placeholder="Enter your email" type="text">
+                <input id="signUpPassword" class="form-control my-3" placeholder="Enter your password" type="password">
+
+                <button onclick="addPerson();"  id="signUpBtn" class="btn btn-outline-info w-100 my-3">Sign up</button>
+                <p class="text-white">You have an account? <a class="text-white" id="signInLink" href="#">Sign
+                        in</a></p>
+            </form>
+        </div>
+    </div>
+    <!-- <............................... End signup page ............................................> -->
+
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
